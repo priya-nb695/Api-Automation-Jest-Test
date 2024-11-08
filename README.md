@@ -3,6 +3,7 @@
 This project demonstrates a basic API automation script that verifies the status code of a GET request.
 
 ## Prerequisites
+
 - Node.js (version 14 or higher) should be installed on your system.
 
 ## Setup
@@ -25,10 +26,21 @@ This project demonstrates a basic API automation script that verifies the status
 
 
 ## Dependencies
+
 jest: Testing framework.
+
 axios: For making the GET request
 
+## Test Scenario:
+
+1. Make a GET Request:
+The script will send a GET request to an API endpoint, such as https://reqres.in/api/users/2.
+
+2. Validate the Response Code:
+The script will validate whether the response code is 200. If the response code is 200, the test will pass, indicating that the request was successful.
+
 ## Expected Output
+
 If the test passes, the status code should be 200, and the following message will appear:
 
 Test Passed: Status code is 200.
@@ -40,6 +52,7 @@ a message with the actual status code will be shown.
 This project is set up with **GitHub Actions** to run automated tests whenever changes are pushed to the `main` branch or a pull request is made. The test results are published and can be accessed from the **Actions** tab in this repository.
 
 ### How It Works:
+
 1. **Automatic Trigger**: GitHub Actions runs on every push to the `main` branch or when a pull request is opened.
 2. **Steps in the Workflow**:
     - Checkout the code
