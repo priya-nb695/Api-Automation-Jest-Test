@@ -34,3 +34,21 @@ If the test passes, the status code should be 200, and the following message wil
 Test Passed: Status code is 200.
 If the test fails, 
 a message with the actual status code will be shown.
+
+## GitHub Actions for Test Automation
+
+This project is set up with **GitHub Actions** to run automated tests whenever changes are pushed to the `main` branch or a pull request is made. The test results are published and can be accessed from the **Actions** tab in this repository.
+
+### How It Works:
+1. **Automatic Trigger**: GitHub Actions runs on every push to the `main` branch or when a pull request is opened.
+2. **Steps in the Workflow**:
+    - Checkout the code
+    - Set up Node.js
+    - Install dependencies
+    - Run tests
+
+### View Test Results:
+- After each workflow run, the results will be available in the **Actions tab** of the repository.
+- You can view the detailed logs and check the status of each step in the workflow.
+
+[Click here to view the Actions tab of the repository](https://github.com/priya-nb695/Api-Automation-Jest-Test/actions/workflows/test.yml)
