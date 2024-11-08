@@ -27,3 +27,10 @@ This project demonstrates a basic API automation script that verifies the status
 ## Dependencies
 jest: Testing framework.
 axios: For making the GET request
+
+## Expected Output
+If the test passes, the status code should be 200, and the following message will appear:
+
+Test Passed: Status code is 200.
+If the test fails, 
+a message with the actual status code will be shown.
